@@ -5,8 +5,12 @@
   <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="favicon.ico">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
       .bg-color{ background-color: lightgray }
       .row .col-des{ /*border: 1px solid;*/ margin-bottom: 10px;}
@@ -27,13 +31,145 @@
       .daily_income{color: darkgray; font-size: 10px}
       .di_percent{float: right; font-size: 15px}
       .perks{background-color: #0099ff; color:white;}
+
+      .feather {
+        width: 16px;
+        height: 16px;
+        vertical-align: text-bottom;
+      }
+      .sideBarContnr{ margin-left: 50px; }
+      .sideBarCol{ background: red; }
+
+
+      /*
+       * Sidebar
+       */
+
+      .sidebar {
+        z-index: 100; /* Behind the navbar */
+        padding: 0;
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+      }
+
+      .sidebar-sticky {
+        height: calc(100vh - 48px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+      }
+
+      .sidebar .nav-link {
+        font-weight: 500;
+        color: white;
+      }
+
+      .sidebar .nav-link .feather {
+        margin-right: 4px;
+        color: white;
+      }
+
+      .sidebar .nav-link.active {
+        color: white;
+      }
+
+      .sidebar .nav-link:hover .feather,
+      .sidebar .nav-link.active .feather {
+        color: inherit;
+      }
+
+      .sidebar-heading {
+        font-size: .75rem;
+        text-transform: uppercase;
+      }
+      .arrow {
+          border: solid white;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 3px;
+          /*float: right;*/
+      }
+
+      .right {
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+      }
     </style>
 </head>
 <body>
   <div class="container-fluid gray_color">
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-3"></div>
-      <div class="col-lg-9 col-md-9 col-sm-9">
+      <div class="col-lg-2 col-md-3 hidden-sm hidden-xs sideBarCol">
+        <nav class="sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <i class="fa fa-flask"></i>
+                  Dashboard <span class="sr-only">(current)</span>
+                  <!-- <i class="arrow right"></i> -->
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-adjust"></i>
+                  UI Elements
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-map-marker"></i>
+                  Maps
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-tag"></i>
+                  Tables
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-tint"></i>
+                  Forms
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-trophy"></i>
+                  Extras
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-envelope-o"></i>
+                  Transational Emails
+                </a>
+              </li>
+            </ul>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-sliders"></i>
+                  Customizer
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-telegram"></i>
+                  Apps
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa fa-circle"></i>
+                  HTML Version
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 sideBarContnr">
         <!-- First Row Starts Here -->
         <div class="row col-des">
           <div class="col-lg-4 col-des col-mar">
