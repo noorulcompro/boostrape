@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bar Chart</title>
+</head>
+<body onload="draw()">
+
+<canvas id="myCanvas" width="900" height="500" style="border: 1px solid #c3c3c3"></canvas>
+
+
+<script type="text/javascript">
+	var values = [100,55,66,22,88]
+	function draw(){
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+
+		var width = 40;
+		var X = 50;
+		var base = 200;
+		let i =0;
+		for(var val of values){
+			ctx.fillStyle = "#000000";
+			ctx.fillText("Bar"+i++, X-5, canvas.height);
+			ctx.fillStyle = "#008080";
+			ctx.fillRect(X-10, canvas.height-val-10, width, val);
+
+			X += width+15;
+		}
+		ctx.fillStyle = '#000000';
+		ctx.fillText('Scale X : '
+		+canvas.width+' Y : '+canvas.height,800,10);
+	}
+
+
+</script>
+
+
+</body>
+</html>
