@@ -31,145 +31,73 @@
       .daily_income{color: darkgray; font-size: 10px}
       .di_percent{float: right; font-size: 15px}
       .perks{background-color: #0099ff; color:white;}
-
-      .feather {
-        width: 16px;
-        height: 16px;
-        vertical-align: text-bottom;
-      }
-      .sideBarContnr{ margin-left: 50px; }
-      .sideBarCol{ background: red; }
-
-
-      /*
-       * Sidebar
-       */
-
-      .sidebar {
-        z-index: 100; /* Behind the navbar */
-        padding: 0;
-        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
-      }
-
-      .sidebar-sticky {
-        height: calc(100vh - 48px);
-        padding-top: .5rem;
-        overflow-x: hidden;
-        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-      }
-
-      .sidebar .nav-link {
-        font-weight: 500;
-        color: white;
-      }
-
-      .sidebar .nav-link .feather {
-        margin-right: 4px;
-        color: white;
-      }
-
-      .sidebar .nav-link.active {
-        color: white;
-      }
-
-      .sidebar .nav-link:hover .feather,
-      .sidebar .nav-link.active .feather {
-        color: inherit;
-      }
-
-      .sidebar-heading {
-        font-size: .75rem;
-        text-transform: uppercase;
-      }
-      .arrow {
-          border: solid white;
-          border-width: 0 3px 3px 0;
-          display: inline-block;
-          padding: 3px;
-          /*float: right;*/
-      }
-
-      .right {
-          transform: rotate(-45deg);
-          -webkit-transform: rotate(-45deg);
+      .sideBarCol{ background: #616161; margin-right: 50px; }
+      .sideBarCol .row .col-12{font-size: 15px;}
+      .customBtn{ border-radius: 0px; background: #616161; border: 0px ; text-align: left; }
+      .faIcons{width: 50px; float: left;}
+      .iconMar{ margin-right: 10px; }
+      @media( max-width :900px ){
+        .firstRow_img{ margin-right: 0px; }
+        .col-mar2{ margin-right: 0px; }
+        .col-mar{ margin-right: 0px; }
+        .sideBarCol{ margin-right: 0px; margin-bottom: 10px;}
       }
     </style>
 </head>
 <body>
   <div class="container-fluid gray_color">
-    <div class="row">
-      <div class="col-lg-2 col-md-3 hidden-sm hidden-xs sideBarCol">
-        <nav class="sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <i class="fa fa-flask"></i>
-                  Dashboard <span class="sr-only">(current)</span>
-                  <!-- <i class="arrow right"></i> -->
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-adjust"></i>
-                  UI Elements
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-map-marker"></i>
-                  Maps
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-tag"></i>
-                  Tables
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-tint"></i>
-                  Forms
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-trophy"></i>
-                  Extras
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-envelope-o"></i>
-                  Transational Emails
-                </a>
-              </li>
-            </ul>
-            <ul class="nav flex-column mb-2">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-sliders"></i>
-                  Customizer
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-telegram"></i>
-                  Apps
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-circle"></i>
-                  HTML Version
-                </a>
-              </li>
-            </ul>
+    <div class="row col-brdr">
+      <div class="col-lg-2 col-md-12 sideBarCol ">
+        <div class="row col-brdr">
+          <div class="col-12" style="color:white">
+            <h5>URBAN <i class="fa fa-align-left fright"></i></h5>
           </div>
-        </nav>
+          <div class="col-12 btn btn-primary customBtn">
+            <span class="faIcons"><i class="iconMar fa fa-flask"></i>Dashboard</span>
+            <i class="fa fa-angle-right fright"></i>
+          </div>
+          <div class="col-12 btn btn-primary customBtn">
+            <span class="faIcons"><i class="iconMar fa fa-adjust"></i>UI Elements</span>
+            <i class="fa fa-angle-right fright"></i>
+          </div>
+          <div class="col-12 btn btn-primary customBtn">
+            <span class="faIcons"><i class="iconMar fa fa-map-marker"></i>Maps</span>
+            <i class="fa fa-angle-right fright"></i>
+            <span class="badge badge-success iconMar fright">2</span>
+          </div>
+          <div class="col-12 btn btn-primary customBtn">
+            <span class="faIcons"><i class="iconMar fa fa-tag"></i>Tables</span>
+            <i class="fa fa-angle-right fright"></i>
+          </div>
+          <div class="col-12 btn btn-primary customBtn">
+            <span class="faIcons"><i class="iconMar fa fa-tint"></i>Forms</span>
+            <i class="fa fa-angle-right fright"></i>
+          </div>
+          <div class="col-12 btn btn-primary customBtn">
+            <span class="faIcons"><i class="iconMar fa fa-trophy"></i>Extras</span>
+            <i class="fa fa-angle-right fright"></i>
+          </div>
+          <div class="col-12 btn btn-primary customBtn">
+            <span class="faIcons"><i class="iconMar fa fa-envelope-o"></i>Transational Emails</span>
+            <i class="fa fa-angle-right fright"></i>
+          </div>
+          <div class="col-12 btn btn-primary customBtn">
+            <span class="faIcons"><i class="iconMar fa fa-sliders"></i>Customizer</span>
+            <i class="fa fa-angle-right fright"></i>
+            <span class="badge badge-danger iconMar fright">Hot</span>
+          </div>
+          <div class="col-12 btn btn-primary customBtn">
+            <span class="faIcons"><i class="iconMar fa fa-telegram"></i>Apps</span>
+            <i class="fa fa-angle-right fright"></i>
+          </div>
+          <div class="col-12 btn btn-primary customBtn">
+            <span class="faIcons"><i class="iconMar fa fa-circle"></i>HTML Version</span>
+            <i class="fa fa-angle-right fright"></i>
+            <span class="badge badge-info iconMar fright">new</span>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 sideBarContnr">
+      <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 sideBarContnr">
         <!-- First Row Starts Here -->
         <div class="row col-des">
           <div class="col-lg-4 col-des col-mar">
@@ -210,7 +138,7 @@
                 <img src="img/fspk.jpg" width="100%" height="155px">
             </div>
           </div>
-          <div class="col-lg-3 col-des col-mar">
+          <div class="col col-des col-mar">
             <div class="row">
               <div class="col-12 white_color">
                 <h6 class="fleft">
@@ -290,7 +218,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-2 col-des col-mar  no-gutters">
+            <div class="col col-des col-mar  no-gutters">
               <div class="row white_color">
               <div class="col-12 text-center">
                 <h7 style="color: gray">PAGE VIEWS</h7></br>
@@ -326,7 +254,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-des col-mar2">
+          <div class="col col-des col-mar2">
             <div class="row col-brdr">
               <div class="col-12 col-brdr col-mar-botm perks">
                 <h5>
@@ -366,7 +294,7 @@
                 <span>New Delhi India</span>
               </h7>
             </div>
-            <div class="col-lg-4 fLeft col-mar" style="background-color: #1affa3; color: white; height: 80px;">
+            <div class="col fLeft col-mar" style="background-color: #1affa3; color: white; height: 80px;">
               <div class="row text-center">
                 <div class="col" style="margin-top: 20px">
                   <h5>
