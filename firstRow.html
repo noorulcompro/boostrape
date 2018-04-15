@@ -38,7 +38,7 @@
       .iconMar{ margin-right: 10px; }
       .btn-toggler{ cursor: pointer; }
       .box-row{ margin-left: 30px; }
-      .hr-menu{ margin-bottom: 10px; }
+      .hr-menu{ margin-bottom: 10px; height: 40px; }
       @media( max-width :900px ){
         .box-row{ margin-left: 0px; }
         .firstRow_img{ margin-right: 0px; }
@@ -47,6 +47,8 @@
         .sideBarCol{ margin-right: 0px; margin-bottom: 10px;}
         .hidder{ display: none; }
       }
+      .hr-menu div *{ float: right; margin-left: 10px; margin-top: 10px;}
+      .hr-menu img{ border-radius: 15px; margin-left: 10px; float: right; margin-top: 5px }
     </style>
 </head>
 <body>
@@ -104,7 +106,16 @@
       </div>
       <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 sideBarContnr col-brdr">
         <div class="row hr-menu white_color">
-          sdlfjlk
+          <div class="col-2  col-brdr">
+            <h6 class="float-left">Dashboard </h6>
+          </div>
+          <div class="col-10 float-right col-brdr">
+            <i class="fa fa-align-left "></i>
+            <img src="img/noor.jpeg" width="30px" height="30px" >
+            <h6>MD NOORUL NABI ANSARI</h6>
+            <i class="fa fa-bell "></i>
+            <i class="fa fa-circle-o "></i>
+          </div>
         </div>
         <!-- First Row Starts Here -->
         <div class="row col-des box-row">
