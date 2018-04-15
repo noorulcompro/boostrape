@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
       .bg-color{ background-color: lightgray }
-      .row .col-des{ /*border: 1px solid;*/ margin-bottom: 10px;}
+      .row .col-des{ border: 1px solid; margin-bottom: 10px;}
       .col-mar-botm{ margin-bottom: 10px; }
-      .col-brdr{ /*border: 1px solid;*/ }
+      .col-brdr{ border: 1px solid; }
       .col-mar{ margin-right: 10px; margin-bottom: 10px; }
       .col-mar2{ margin-right: 20px; }
       .firstRow_img{height:60px; height: 60px; float: left; margin-right: 10px;}
@@ -31,13 +31,16 @@
       .daily_income{color: darkgray; font-size: 10px}
       .di_percent{float: right; font-size: 15px}
       .perks{background-color: #0099ff; color:white;}
-      .sideBarCol{ background: #616161; margin-right: 50px; }
+      .sideBarCol{ background: #616161; }
       .sideBarCol .row .col-12{font-size: 15px;}
       .customBtn{ border-radius: 0px; background: #616161; border: 0px ; text-align: left; }
       .faIcons{width: 50px; float: left;}
       .iconMar{ margin-right: 10px; }
       .btn-toggler{ cursor: pointer; }
+      .box-row{ margin-left: 30px; }
+      .hr-menu{ margin-bottom: 10px; }
       @media( max-width :900px ){
+        .box-row{ margin-left: 0px; }
         .firstRow_img{ margin-right: 0px; }
         .col-mar2{ margin-right: 0px; }
         .col-mar{ margin-right: 0px; }
@@ -99,9 +102,12 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 sideBarContnr">
+      <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 sideBarContnr col-brdr">
+        <div class="row hr-menu white_color">
+          sdlfjlk
+        </div>
         <!-- First Row Starts Here -->
-        <div class="row col-des">
+        <div class="row col-des box-row">
           <div class="col-lg-4 col-des col-mar">
             <div class="row">
               <div class="col-12 col-des white_color">
@@ -155,7 +161,7 @@
         <!-- First Row Ends Here -->
 
         <!-- Second Row Starts Here -->
-        <div class="row col-des">
+        <div class="row col-des box-row">
             <div class="col-lg-6 col-des col-mar">
               <div class="row white_color">
                 <div class="col-12 col-brdr">
@@ -220,7 +226,7 @@
                 </div>
               </div>
             </div>
-            <div class="col col-des col-mar  no-gutters">
+            <div class="col col-des col-mar no-gutters">
               <div class="row white_color">
               <div class="col-12 text-center">
                 <h7 style="color: gray">PAGE VIEWS</h7></br>
@@ -236,7 +242,7 @@
         <!-- Second Row Ends Here -->
 
         <!-- Third Row Starts Here -->
-        <div class="row col-des">
+        <div class="row col-des box-row">
           <div class="col-lg-7 col-des col-mar2">
             <div class="row white_color">
               <div class="col-lg-12">
@@ -256,7 +262,7 @@
               </div>
             </div>
           </div>
-          <div class="col col-des col-mar2">
+          <div class="col col-des col-mar">
             <div class="row col-brdr">
               <div class="col-12 col-brdr col-mar-botm perks">
                 <h5>
@@ -279,7 +285,7 @@
         <!-- Third Row Starts Here -->
 
         <!-- Fourth Row Starts Here -->
-        <div class="row col-brdr">
+        <div class="row col-brdr box-row">
           <div class="col-lg-4 fLeft col-mar" style="background-color: #0099ff; color: white; padding-top: 10px; ">
               <img src="img/noor.jpeg" style="border-radius: 40px" width="70px" height="70px">
               <h9 style="float: right; margin-right: 50px;">
