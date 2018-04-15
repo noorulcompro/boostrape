@@ -36,22 +36,24 @@
       .customBtn{ border-radius: 0px; background: #616161; border: 0px ; text-align: left; }
       .faIcons{width: 50px; float: left;}
       .iconMar{ margin-right: 10px; }
+      .btn-toggler{ cursor: pointer; }
       @media( max-width :900px ){
         .firstRow_img{ margin-right: 0px; }
         .col-mar2{ margin-right: 0px; }
         .col-mar{ margin-right: 0px; }
         .sideBarCol{ margin-right: 0px; margin-bottom: 10px;}
+        .hidder{ display: none; }
       }
     </style>
 </head>
 <body>
   <div class="container-fluid gray_color">
     <div class="row col-brdr">
-      <div class="col-lg-2 col-md-12 sideBarCol ">
-        <div class="row col-brdr">
+      <div class="col-lg-2 col-md-12 sideBarCol no-gutters">
           <div class="col-12" style="color:white">
-            <h5>URBAN <i class="fa fa-align-left fright"></i></h5>
+            <h5>URBAN <i class="fa fa-align-left fright btn-toggler"></i></h5>
           </div>
+        <div class="row col-brdr hidder">
           <div class="col-12 btn btn-primary customBtn">
             <span class="faIcons"><i class="iconMar fa fa-flask"></i>Dashboard</span>
             <i class="fa fa-angle-right fright"></i>
@@ -329,6 +331,11 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(".btn-toggler").click(function(){
+      $(".hidder").toggle(2000)
+    })
+  </script>
 </body>
 </html>
 
