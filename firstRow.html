@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="favicon.ico">
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -18,7 +19,16 @@
       .col-brdr{ /*border: 1px solid;*/ }
       .col-mar{ margin-right: 10px; margin-bottom: 10px; }
       .col-mar2{ margin-right: 20px; }
-      .firstRow_img{height:60px; height: 60px; float: left; margin-right: 10px;}
+      .firstRow_img{
+        width:30px; 
+        height: 30px; 
+        float: left; 
+        margin-right: 10px; 
+        margin-top: 12px;
+        border-radius: 15px; 
+        padding: 5px 0px 0px 10px;
+        color: white;
+      }
       .firstRow_span{ color: darkgray }
       .h5_header{ float: left }
       .fleft{ float: left }
@@ -37,8 +47,11 @@
       .faIcons{width: 50px; float: left;}
       .iconMar{ margin-right: 10px; }
       .btn-toggler{ cursor: pointer; }
-      .box-row{ margin-left: 30px; }
+      .box-row{ margin-left: 10px; }
+      .top-margin{ margin-top: 5px; }
+      .img-squre{ margin-top: 10px; }
       .hr-menu{ margin-bottom: 10px; height: 40px; }
+      .badgeStyle{ border-radius: 0px; width: 40px; }
       @media( max-width :900px ){
         .box-row{ margin-left: 0px; }
         .firstRow_img{ margin-right: 0px; }
@@ -55,7 +68,7 @@
   <div class="container-fluid gray_color">
     <div class="row col-brdr">
       <div class="col-lg-2 col-md-12 sideBarCol no-gutters">
-          <div class="col-12" style="color:white">
+          <div class="col-12" style="color:white; margin-top: 5px;">
             <h5>URBAN <i class="fa fa-align-left fright btn-toggler"></i></h5>
           </div>
         <div class="row col-brdr hidder">
@@ -70,7 +83,7 @@
           <div class="col-12 btn btn-primary customBtn">
             <span class="faIcons"><i class="iconMar fa fa-map-marker"></i>Maps</span>
             <i class="fa fa-angle-right fright"></i>
-            <span class="badge badge-success iconMar fright">2</span>
+            <span class="badge badge-success iconMar fright badgeStyle">2</span>
           </div>
           <div class="col-12 btn btn-primary customBtn">
             <span class="faIcons"><i class="iconMar fa fa-tag"></i>Tables</span>
@@ -90,8 +103,7 @@
           </div>
           <div class="col-12 btn btn-primary customBtn">
             <span class="faIcons"><i class="iconMar fa fa-sliders"></i>Customizer</span>
-            <i class="fa fa-angle-right fright"></i>
-            <span class="badge badge-danger iconMar fright">Hot</span>
+            <span class="badge badge-danger iconMar fright badgeStyle">Hot</span>
           </div>
           <div class="col-12 btn btn-primary customBtn">
             <span class="faIcons"><i class="iconMar fa fa-telegram"></i>Apps</span>
@@ -99,8 +111,7 @@
           </div>
           <div class="col-12 btn btn-primary customBtn">
             <span class="faIcons"><i class="iconMar fa fa-circle"></i>HTML Version</span>
-            <i class="fa fa-angle-right fright"></i>
-            <span class="badge badge-info iconMar fright">new</span>
+            <span class="badge badge-info iconMar fright badgeStyle">new</span>
           </div>
         </div>
       </div>
@@ -122,21 +133,28 @@
           <div class="col-lg-4 col-des col-mar">
             <div class="row">
               <div class="col-12 col-des white_color">
-                <img src="img/mic.png" class="firstRow_img"/>
+                <!-- <img src="img/mic.png" class="firstRow_img"/> -->
+                <div class="firstRow_img" style="background: blue;">
+                  <i class="fa fa-microphone text-center" ></i>
+                </div>
                 <h5 class=h5_header">
                   8,372K 
                   <br><span class="firstRow_span">Registered Users</span></br>
                 </h5>
               </div>
               <div class="col-12 col-des white_color">
-                <img src="img/rvenue.png" class="firstRow_img"/>
+                <div class="firstRow_img" style="background: maroon;">
+                  <i class="fa fa-tint" ></i>
+                </div>
                 <h5 class=h5_header">
                   86% 
                   <br><span class="firstRow_span">Revenue Increase</span></br>
                 </h5>
               </div>
               <div class="col-12 col-des white_color">
-                <img src="img/tel.png" class="firstRow_img"/>
+                <div style="color:green; padding: 0px" class="firstRow_img">
+                  <i class="fa fa-telegram fa-2x"></i>
+                </div>
                 <h5 class=h5_header">
                   7,355K 
                   <br><span class="firstRow_span">Pending Orders&nbsp;&nbsp;&nbsp;</span></br>
@@ -147,24 +165,24 @@
           <div class="col-lg-4 col-des col-mar">
             <div class="row">
               <div class="col-12 white_color">
-                  <h6  class="fleft">
+                  <h6  class="fleft top-margin">
                     TRANSFER SPEEDS
                     <br><span style="color: #0099ff">43.02mbps</span></br>
                   </h6>
-                  <span class="fright frscol" >Mail Server</span>
-                  <img src="img/square.jpg" width="20px" height="20px" class="fright frscol">
-                </div>
-                <img src="img/fspk.jpg" width="100%" height="155px">
+                  <span class="fright frscol top-margin" >Mail Server</span>
+                  <img src="img/square.jpg" width="15px" height="15px" class="fright frscol img-squre">
+              </div>
+                <img src="img/fspk.jpg" width="100%" height="130px">
             </div>
           </div>
           <div class="col col-des col-mar">
             <div class="row">
               <div class="col-12 white_color">
-                <h6 class="fleft">
+                <h6 class="fleft top-margin">
                   WEEKLY DISTRIBUTION
                   <br><span style="color: #00b33c">3,490K</span></br>
                 </h6>
-                <img src="img/doughnut.jpg" width="100%" height="155px">
+                <img src="img/doughnut.jpg" width="100%" height="130px">
               </div>
             </div>
           </div>
@@ -224,16 +242,18 @@
                     </h5>
                 </div>
                 <div class="col-12 col-des white_color no-gutters">
-                  <div class="col-6" style="float: left;">
-                    7,623K
-                    <br><span class="daily_income">DAILY INCOME</span></br>
+                  <div class="row">
+                    <div class="col-6" style="float: left;">
+                      7,623K
+                      <br><span class="daily_income">DAILY INCOME</span></br>
+                    </div>
+                    <div class="col-6 fleft white_color">
+                      <h5 class="di_percent">
+                        <span style="color: green;">- 6% <br><span style="color: gray;">+ 897</span></span>
+                      </h5>
+                    </div>
+                    <img src="img/spikes.png" width="100%" height="45px">
                   </div>
-                  <div class="col-6 fleft white_color">
-                    <h5 class="di_percent">
-                      <span style="color: green;">- 6% <br><span style="color: gray;">+ 897</span></span>
-                    </h5>
-                  </div>
-                  <img src="img/spikes.png" width="100%" height="45px">
                 </div>
               </div>
             </div>
@@ -254,22 +274,21 @@
 
         <!-- Third Row Starts Here -->
         <div class="row col-des box-row">
-          <div class="col-lg-7 col-des col-mar2">
+          <div class="col-lg-6 col-des col-mar2">
             <div class="row white_color">
               <div class="col-lg-12">
                 <h5>
-                  SALES<br><span style="color: gray;">WEEKLY PROJECTIONS</span><br>&nbsp;
+                  SALES<br><span style="color: gray;">WEEKLY PROJECTIONS</span>
                 </h5>
-                <hr>
+                <!-- <hr> -->
+                <br>
               </div>
               <div class="col-lg-12">
-                United States <span class="badge badge-primary" style="float: right;">32</span><hr>
-              </div>
-              <div class="col-lg-12">
-                China <span class="badge badge-danger" style="float: right;">54</span><hr>
-              </div>
-              <div class="col-lg-12">
-                Great Britain <span class="badge badge-danger" style="float: right;">43</span>
+                <table width="100%" class="table">
+                  <tr><td>United States <span class="badge badge-primary badgeStyle" style="float: right;">32</span></td></tr>
+                  <tr><td>China <span class="badge badge-danger badgeStyle" style="float: right;">54</span></td></tr>
+                  <tr><td>Great Britain <span class="badge badge-danger badgeStyle" style="float: right;">43</span></td></tr>
+                </table>
               </div>
             </div>
           </div>
@@ -283,12 +302,15 @@
                 </h5>
               </div>
               <div class="col-12 col-brdr col-mar-botm white_color">
-                <span>
-                  Distance Travelled<br>
-                  <img src="img/bar.jpg" style="float: right;" height="150px;" width="220px;">
-                  <br>  <h5 style="size:15px">4389km<br><span style="color: gray; font-size: 10px;">Avg 53Km/sec</span>
-                  </h5>
-                </span>
+                <div class="row" style="margin-bottom: 5px;">
+                  <div class="col-lg-4" style="margin-top: 50px;">
+                    Distance Travelled<br>
+                    <h2 style="size:15px"><b>4389km</b></h2><span style="color: gray; font-size: 10px;">Avg 53Km/sec</span>
+                  </div>
+                  <div class="col-lg-8">
+                    <canvas class="fright col-mar-botm" id="myCanvas" height="150px" width="380px;"></canvas>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -305,7 +327,7 @@
                 <span style="font-size: 10px;">Software Engineer</span>
               </h9>
             </div>
-            <div class="col-lg-3 fLeft col-mar text-center" style="background-color: rgb(120,74,50) ">
+            <div class="col-lg-4 fLeft col-mar text-center" style="background-color: rgb(120,74,50) ">
               <h7 style="color: white">
                 <img src="img/www.png" width="80px;" height="80px;" style="float: right;">
                 <br>
@@ -352,6 +374,27 @@
     $(".btn-toggler").click(function(){
       $(".hidder").toggle(2000)
     })
+
+    var values = [100,55,66,22,88]
+    function draw(){
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+
+      var width = 40;
+      var X = 50;
+      var base = 200;
+      let i =0;
+      var days = ["M", "T", "W", "Th", "S", "F"];
+      for(var val of values){
+        ctx.fillStyle = "#000000";
+        ctx.fillText(days[i++], X+5, canvas.height);
+        ctx.fillStyle = "#cccccc";
+        ctx.fillRect(X-10, canvas.height-val-10, width, val);
+
+        X += width+30;
+      }
+    }
+    $(document).ready(draw);
   </script>
 </body>
 </html>
